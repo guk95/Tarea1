@@ -57,27 +57,14 @@ public class ListaSimple {
     }
 
     /**
-     * <h4>menor2</h4>
+     * <h4>menoresNormal</h4>
      * <p>
      * Obtiene los dos Strings menores de la lista de Strings.</p>
      *
      *
      * @return una variable que contiene los dos Strings.
      */
-    public String menor1() {
-        String resultado = cabeza.getDato() + cabeza.getSig().getDato();
-        return resultado;
-    }
-
-    /**
-     * <h4>menor2</h4>
-     * <p>
-     * Obtiene los dos Strings menores de la lista de Strings.</p>
-     *
-     *
-     * @return una variable que contiene los dos Strings.
-     */
-    public String menor2() {
+    public String menoresNormal() {
         String menor = " ";
         String menor2 = " ";
         String resultado = "";
@@ -98,7 +85,7 @@ public class ListaSimple {
             aux = aux.getSig();
             ++cont;
         }
-        resultado = menor + " - " + menor2;
+        resultado = "Los elementos menores son : " + menor + " - " + menor2;
         return resultado;
     }
 
@@ -112,8 +99,7 @@ public class ListaSimple {
      */
     public String toString() {
         String resultado = "";
-        StringBuilder str = new StringBuilder();
-        str.append(" ");
+
         Nodo aux = cabeza;
 
         for (int i = 0; i < size; i++) {
@@ -189,49 +175,6 @@ public class ListaSimple {
         this.size = 0;
         this.ultimo = null;
         this.realSize = 0;
-    }
-
-    public boolean realsize() {
-        Nodo nuevo = new Nodo();
-        Nodo aux = cabeza;
-        int cont = 0;
-        if (realSize == 0) {
-            cabeza = nuevo;
-            cabeza.setDato("a");
-
-            while (realSize < 10) {
-                aux.setSig(nuevo);
-
-                while (cont < realSize) {
-                    aux = aux.getSig();
-                    cont++;
-
-                }
-                aux.setDato("b");
-
-                realSize++;
-            }
-
-        }
-
-        return true;
-
-    }
-
-    public boolean addtarea(String dato) {
-
-        Nodo nuevo = new Nodo();
-        int cont = 0;
-        if (size == 0) {
-            cabeza = nuevo;
-            cabeza.setDato(dato);
-
-        } else {
-
-        }
-        size++;
-
-        return true;
     }
 
 }

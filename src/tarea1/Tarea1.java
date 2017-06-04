@@ -12,24 +12,19 @@ public class Tarea1 {
     public static void main(String[] args) {
         ListaSimple simple = new ListaSimple();
 
-//        simple.add("3");
-//        simple.add(".");
-//        simple.add(".");
-//        simple.add("!");
-//        simple.add("a");
-//        simple.add("a");
-//        simple.add("A");
-//        simple.add("2a");
-//        simple.addtarea("212312");
+        simple.add("3");
+        simple.add("1");
+        simple.add("5");
+        simple.add("!");
+        simple.add("a");
+        simple.add("z");
+        simple.add("A");
+        simple.add("2");
+        System.out.println(simple.toString());
 
-
-
-
-
-     
-//        System.out.println(simple.toString());
-         System.out.println(simple.toString());
-      
+        System.out.println(simple.menoresNormal());
+        simple.invertirLista();
+        System.out.println("La lista invertida es : " + simple.toString());
 
     }
 
