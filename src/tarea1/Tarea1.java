@@ -10,6 +10,9 @@ public class Tarea1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        // Mae el ejercicio 1 no lo logre. 
+        //Yo se que no sirve de mucho pero entonces lo cambie por el addsorted
         ListaSimple simple = new ListaSimple();
 
         simple.add("3");
